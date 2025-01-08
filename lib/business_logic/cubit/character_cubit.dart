@@ -7,6 +7,13 @@ part 'character_state.dart';
 class CharacterCubit extends Cubit<CharacterState> {
   final ApiService apiService;
   CharacterCubit(this.apiService) : super(CharacterInitial());
+
+
+
+
+
+
+  
   Future<void> fetchAllCharacter() async {
     emit(CharactersLoading());
     try {

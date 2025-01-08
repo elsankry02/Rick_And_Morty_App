@@ -1,10 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/colors.dart';
 import 'package:rick_and_morty/data/models/results_model.dart';
-import 'package:rick_and_morty/presentation/widgets/details_widget.dart';
+import 'package:rick_and_morty/pages/details_character/widget/details_widget.dart';
 
-class DetailsCharacter extends StatelessWidget {
-  const DetailsCharacter({super.key, required this.results});
+@RoutePage()
+class DetailsCharacterPage extends StatelessWidget {
+  const DetailsCharacterPage({super.key, required this.results});
   final Results results;
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class DetailsCharacter extends StatelessWidget {
         slivers: [
           SliverAppBar(
             leading: GestureDetector(
-              onTap: () => Navigator.pop(context),
+              onTap: () => context.router.maybePop(),
               child: const Icon(
                 Icons.arrow_back_ios_new_outlined,
                 color: Colors.white,

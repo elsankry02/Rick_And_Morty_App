@@ -1,9 +1,10 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:rick_and_morty/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/colors.dart';
+import 'package:rick_and_morty/core/router/router.dart';
 import 'package:rick_and_morty/data/models/results_model.dart';
-import 'package:rick_and_morty/presentation/widgets/details_character.dart';
 
 class DetailsCharacterWidget extends StatelessWidget {
   final Results results;
@@ -11,13 +12,11 @@ class DetailsCharacterWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => DetailsCharacter(
-            results: results,
-          ),
-        ),
-      ),
+      onTap: () {
+        context.router.push(
+          DetailsCharacterRoute(results: results),
+        );
+      },
       child: Container(
         padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(

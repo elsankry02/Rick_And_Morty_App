@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/presentation/splash/splash_view.dart';
+import 'package:rick_and_morty/core/router/router.dart';
 
 void main() {
   runApp(const RickAndMorty());
@@ -10,9 +10,9 @@ class RickAndMorty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router.config(),
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
     );
   }
 }
