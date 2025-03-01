@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:rick_and_morty/business_logic/cubit/character_cubit.dart';
-import 'package:rick_and_morty/core/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/color_manger.dart';
 import 'package:rick_and_morty/data/web_services/character_api.dart';
 import 'package:rick_and_morty/pages/character/widget/details_character_widget.dart';
 
@@ -26,16 +26,16 @@ class _CharacterPageState extends State<CharacterPage> {
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
-          backgroundColor: AppColors.yellow,
+          backgroundColor: ColorManger.yellow,
           title: const Text(
             'Rick and Morty',
             style: TextStyle(
-              color: AppColors.grey,
+              color: ColorManger.grey,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        backgroundColor: AppColors.grey,
+        backgroundColor: ColorManger.grey,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -93,8 +93,8 @@ class _CharacterPageState extends State<CharacterPage> {
                 {
                   return Center(
                     child: LoadingAnimationWidget.twistingDots(
-                        leftDotColor: AppColors.white,
-                        rightDotColor: AppColors.yellow,
+                        leftDotColor: ColorManger.white,
+                        rightDotColor: ColorManger.yellow,
                         size: 200),
                   );
                 }
@@ -109,7 +109,7 @@ class _CharacterPageState extends State<CharacterPage> {
 
 OutlineInputBorder outLineinputBorder() {
   return OutlineInputBorder(
-    borderSide: const BorderSide(color: AppColors.yellow),
+    borderSide: const BorderSide(color: ColorManger.yellow),
     borderRadius: BorderRadius.circular(8),
   );
 }

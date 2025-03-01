@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:rick_and_morty/core/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/color_manger.dart';
 import 'package:rick_and_morty/core/router/router.dart';
 import 'package:rick_and_morty/data/models/results_model.dart';
 
@@ -21,7 +21,7 @@ class DetailsCharacterWidget extends StatelessWidget {
         padding: const EdgeInsets.all(2),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(3),
-          color: AppColors.white,
+          color: ColorManger.white,
         ),
         child: GridTile(
           footer: Container(
@@ -32,7 +32,7 @@ class DetailsCharacterWidget extends StatelessWidget {
               results.name!,
               maxLines: 1,
               style: const TextStyle(
-                color: AppColors.white,
+                color: ColorManger.white,
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
@@ -45,8 +45,8 @@ class DetailsCharacterWidget extends StatelessWidget {
             fit: BoxFit.cover,
             placeholder: (context, url) => Center(
               child: LoadingAnimationWidget.twistingDots(
-                leftDotColor: AppColors.grey,
-                rightDotColor: AppColors.yellow,
+                leftDotColor: ColorManger.grey,
+                rightDotColor: ColorManger.yellow,
                 size: 50,
               ),
             ),

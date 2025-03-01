@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/color_manger.dart';
 import 'package:rick_and_morty/data/models/results_model.dart';
 
 class DetailsWidget extends StatelessWidget {
@@ -31,7 +31,7 @@ class DetailsWidget extends StatelessWidget {
               value,
               style: const TextStyle(
                 fontSize: 16,
-                color: AppColors.white,
+                color: ColorManger.white,
               ),
             ),
           ],
@@ -39,7 +39,7 @@ class DetailsWidget extends StatelessWidget {
         Divider(
           endIndent: endIndent,
           thickness: 2,
-          color: AppColors.yellow,
+          color: ColorManger.yellow,
         )
       ],
     );

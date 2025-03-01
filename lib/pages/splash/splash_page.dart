@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/constant/colors.dart';
+import 'package:rick_and_morty/core/constant/color_manger.dart';
 import 'package:rick_and_morty/core/router/router.dart';
 
 @RoutePage()
@@ -38,7 +38,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.splashColor,
+      backgroundColor: ColorManger.splashColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
