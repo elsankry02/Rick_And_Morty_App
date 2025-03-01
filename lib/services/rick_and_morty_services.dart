@@ -12,9 +12,7 @@ class RickAndMortyServices {
     final results = data['results'] as List<dynamic>;
     final List<Results> allCharcter = [];
     for (var allresults in results) {
-      allCharcter.add(
-        Results.fromJson(allresults),
-      );
+      allCharcter.add(Results.fromJson(allresults));
     }
     return allCharcter;
   }

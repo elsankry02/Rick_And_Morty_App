@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/core/router/router.dart';
 

@@ -61,7 +61,7 @@ class _CharacterPageState extends ConsumerState<CharacterPage> {
         error: (error, _) {
           return Center(
             child: Text(
-              error.toString(),
+              '$error',
               style: const TextStyle(color: Colors.white),
             ),
           );
@@ -77,11 +77,4 @@ class _CharacterPageState extends ConsumerState<CharacterPage> {
       ),
     );
   }
-}
-
-OutlineInputBorder outLineinputBorder() {
-  return OutlineInputBorder(
-    borderSide: const BorderSide(color: ColorManger.yellow),
-    borderRadius: BorderRadius.circular(8),
-  );
 }

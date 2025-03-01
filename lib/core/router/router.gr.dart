@@ -1,3 +1,4 @@
+// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -13,10 +14,7 @@ part of 'router.dart';
 /// [CharacterPage]
 class CharacterRoute extends PageRouteInfo<void> {
   const CharacterRoute({List<PageRouteInfo>? children})
-      : super(
-          CharacterRoute.name,
-          initialChildren: children,
-        );
+    : super(CharacterRoute.name, initialChildren: children);
 
   static const String name = 'CharacterRoute';
 
@@ -36,13 +34,10 @@ class DetailsCharacterRoute extends PageRouteInfo<DetailsCharacterRouteArgs> {
     required Results results,
     List<PageRouteInfo>? children,
   }) : super(
-          DetailsCharacterRoute.name,
-          args: DetailsCharacterRouteArgs(
-            key: key,
-            results: results,
-          ),
-          initialChildren: children,
-        );
+         DetailsCharacterRoute.name,
+         args: DetailsCharacterRouteArgs(key: key, results: results),
+         initialChildren: children,
+       );
 
   static const String name = 'DetailsCharacterRoute';
 
@@ -50,19 +45,13 @@ class DetailsCharacterRoute extends PageRouteInfo<DetailsCharacterRouteArgs> {
     name,
     builder: (data) {
       final args = data.argsAs<DetailsCharacterRouteArgs>();
-      return DetailsCharacterPage(
-        key: args.key,
-        results: args.results,
-      );
+      return DetailsCharacterPage(key: args.key, results: args.results);
     },
   );
 }
 
 class DetailsCharacterRouteArgs {
-  const DetailsCharacterRouteArgs({
-    this.key,
-    required this.results,
-  });
+  const DetailsCharacterRouteArgs({this.key, required this.results});
 
   final Key? key;
 
@@ -78,10 +67,7 @@ class DetailsCharacterRouteArgs {
 /// [SplashPage]
 class SplashRoute extends PageRouteInfo<void> {
   const SplashRoute({List<PageRouteInfo>? children})
-      : super(
-          SplashRoute.name,
-          initialChildren: children,
-        );
+    : super(SplashRoute.name, initialChildren: children);
 
   static const String name = 'SplashRoute';
 
