@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/core/constant/color_manger.dart';
-import 'package:rick_and_morty/data/models/results_model.dart';
+import 'package:rick_and_morty/models/rick_and_morty_model.dart';
 import 'package:rick_and_morty/pages/details_character/widget/details_widget.dart';
 
 @RoutePage()

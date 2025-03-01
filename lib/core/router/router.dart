@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/data/models/results_model.dart';
+import 'package:rick_and_morty/models/rick_and_morty_model.dart';
 import 'package:rick_and_morty/pages/character/character_page.dart';
 import 'package:rick_and_morty/pages/details_character/details_character_page.dart';
 import 'package:rick_and_morty/pages/splash/splash_page.dart';
