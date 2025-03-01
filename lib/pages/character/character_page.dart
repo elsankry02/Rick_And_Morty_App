@@ -17,7 +17,7 @@ class CharacterPage extends ConsumerStatefulWidget {
 class _CharacterPageState extends ConsumerState<CharacterPage> {
   @override
   Widget build(BuildContext context) {
-    final futurprovider = ref.read(rickAndMortyProvider);
+    final futurprovider = ref.watch(rickAndMortyProvider);
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
