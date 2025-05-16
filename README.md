@@ -1,4 +1,4 @@
-# rick_and_morty 👾
+# Rick and Morty App 👾
 
 ![Image](https://github.com/user-attachments/assets/6af41b1f-234f-4165-b5d6-93fe76ecdc63)
 
