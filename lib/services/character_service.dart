@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
-import 'package:rick_and_morty/models/rick_and_morty_model.dart';
+import 'package:rick_and_morty/models/character_model.dart';
 
-class RickAndMortyServices {
+class CharacterService {
   final Dio dio;
 
-  RickAndMortyServices({required this.dio});
+  CharacterService({required this.dio});
 
-  Future<List<Results>> rickAndMortyFunc() async {
+  Future<List<Results>> characterFunc() async {
     final response = await dio.get('https://rickandmortyapi.com/api/character');
     final data = response.data as Map<String, dynamic>;
     final results = data['results'] as List<dynamic>;

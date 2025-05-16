@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/core/constant/color_manger.dart';
-import 'package:rick_and_morty/models/rick_and_morty_model.dart';
+import 'package:rick_and_morty/constant/color_manger.dart';
+import 'package:rick_and_morty/models/character_model.dart';
 
-class DetailsWidget extends StatelessWidget {
+class CharacterDetailsWidget extends StatelessWidget {
   final Results results;
   final String title;
   final String value;
   final double endIndent;
-  const DetailsWidget(
+  const CharacterDetailsWidget(
       {super.key,
       required this.title,
       required this.value,
