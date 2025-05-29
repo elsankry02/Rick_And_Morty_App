@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:rick_and_morty/models/character_model.dart';
+import 'package:rick_and_morty/featrues/character_page/data/models/character_model.dart';
 
 class CharacterService {
   final Dio dio;
