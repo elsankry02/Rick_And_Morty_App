@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rick_and_morty/core/services/character_service.dart';
+import 'package:rick_and_morty/featrues/data/services/character_service.dart';
 
 final dioProvider = Provider<Dio>((ref) {
   return Dio();

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:rick_and_morty/core/constant/color_manger.dart';
-import 'package:rick_and_morty/featrues/character_page/presentation/widget/details_character_widget.dart';
-import 'package:rick_and_morty/featrues/character_page/data/character_provider.dart/rick_and_morty_provider.dart';
+import 'package:rick_and_morty/featrues/presentation/character_page/widget/details_character_widget.dart';
+import 'package:rick_and_morty/featrues/data/providers/character_provider.dart/rick_and_morty_provider.dart';
 
 @RoutePage()
 class CharacterPage extends ConsumerStatefulWidget {

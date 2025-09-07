@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:rick_and_morty/core/constant/color_manger.dart';
 import 'package:rick_and_morty/core/router/router.dart';
-import 'package:rick_and_morty/featrues/character_page/data/models/character_model.dart';
+import 'package:rick_and_morty/featrues/data/models/character_model.dart';
 
 class DetailsCharacterWidget extends StatelessWidget {
   final Results results;

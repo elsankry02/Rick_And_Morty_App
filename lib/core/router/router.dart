@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/featrues/character_page/data/models/character_model.dart';
-import 'package:rick_and_morty/featrues/character_page/presentation/view/character_page.dart';
-import 'package:rick_and_morty/featrues/character_profile_page/presentation/view/character_profile_page.dart';
-import 'package:rick_and_morty/featrues/splash_page/presentation/view/splash_page.dart';
+import 'package:rick_and_morty/featrues/data/models/character_model.dart';
+import 'package:rick_and_morty/featrues/presentation/character_page/view/character_page.dart';
+import 'package:rick_and_morty/featrues/presentation/character_profile_page/view/character_profile_page.dart';
+import 'package:rick_and_morty/featrues/presentation/splash_page/splash_page.dart';
 
 part 'router.gr.dart';
 

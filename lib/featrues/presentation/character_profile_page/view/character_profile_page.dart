@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/core/constant/color_manger.dart';
-import 'package:rick_and_morty/featrues/character_page/data/models/character_model.dart';
-import 'package:rick_and_morty/featrues/character_profile_page/presentation/widget/character_details_widget.dart';
+import 'package:rick_and_morty/featrues/data/models/character_model.dart';
+import 'package:rick_and_morty/featrues/presentation/character_profile_page/widget/character_details_widget.dart';
 
 @RoutePage()
 class CharacterProfilePage extends StatelessWidget {

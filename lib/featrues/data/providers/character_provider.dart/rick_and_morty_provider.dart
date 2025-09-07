@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:rick_and_morty/featrues/character_page/data/models/character_model.dart';
-import 'package:rick_and_morty/providers/provider.dart';
+import 'package:rick_and_morty/featrues/data/models/character_model.dart';
+import 'package:rick_and_morty/featrues/data/providers/provider.dart';
 
 final rickAndMortyProvider = FutureProvider<List<Results>>((ref) async {
   final service = ref.read(resultsServiceProvider);
